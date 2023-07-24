@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ons-coronasurveys"
+version = "1.0.0"
+description = "Identifying differences between ONS and Coronasurveys COVID-19 case count estimates"
+authors = ["q9i <46249765+quantum9innovation@users.noreply.github.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+packages = [{include = "ons_coronasurveys"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+matplotlib = "^3.7.2"
+pandas = "^2.0.3"
+pyqt5 = "^5.15.9"
+scienceplots = "^2.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
