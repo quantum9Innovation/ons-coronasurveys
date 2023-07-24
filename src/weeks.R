@@ -1,4 +1,4 @@
-# Collects data across similar dates in processed files:
+# Collects data across weeks in processed files:
 # coronasurveys (eng, wls, nir, sct)
 # ons (eng, wls, nir, sct)
 
@@ -86,10 +86,13 @@ filter <- function(coronasurveys, ons) {
 write <- function(coronasurveys, ons, region) {
   # write out files
   write.csv(
-    coronasurveys, sprintf('data/filtered/coronasurveys-%s.csv', region),
+    coronasurveys, sprintf('data/weeks/coronasurveys-%s.csv', region),
     quote = FALSE, row.names = FALSE
   )
-  write.csv(ons, sprintf('data/filtered/ons-%s.csv', region), quote = FALSE, row.names = FALSE)
+  write.csv(
+    ons, sprintf('data/weeks/ons-%s.csv', region),
+    quote = FALSE, row.names = FALSE
+  )
 }
 
 process <- function(region) {
