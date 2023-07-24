@@ -29,20 +29,48 @@ def coronasurveys():
     coronasurveys_eng['p_cases'],
     label='England'
   )
+  plt.fill_between(
+    coronasurveys_eng['days'],
+    coronasurveys_eng['p_cases_low'], # type: ignore
+    coronasurveys_eng['p_cases_high'], # type: ignore
+    alpha=0.5,
+    label='England (error)'
+  )
   plt.plot(
     coronasurveys_nir['days'],
     coronasurveys_nir['p_cases'],
     label='Northern Ireland'
+  )
+  plt.fill_between(
+    coronasurveys_nir['days'],
+    coronasurveys_nir['p_cases_low'], # type: ignore
+    coronasurveys_nir['p_cases_high'], # type: ignore
+    alpha=0.5,
+    label='Northern Ireland (error)'
   )
   plt.plot(
     coronasurveys_sct['days'],
     coronasurveys_sct['p_cases'],
     label='Scotland'
   )
+  plt.fill_between(
+    coronasurveys_sct['days'],
+    coronasurveys_sct['p_cases_low'], # type: ignore
+    coronasurveys_sct['p_cases_high'], # type: ignore
+    alpha=0.5,
+    label='Scotland (error)'
+  )
   plt.plot(
     coronasurveys_wls['days'],
     coronasurveys_wls['p_cases'],
     label='Wales'
+  )
+  plt.fill_between(
+    coronasurveys_wls['days'],
+    coronasurveys_wls['p_cases_low'], # type: ignore
+    coronasurveys_wls['p_cases_high'], # type: ignore
+    alpha=0.5,
+    label='Wales (error)'
   )
   plt.title('Coronasurveys')
   plt.xlabel('Days since 2020/01/06')
@@ -59,20 +87,48 @@ def ons():
     ons_eng['p_infected'],
     label='England'
   )
+  plt.fill_between(
+    ons_eng['days'],
+    ons_eng['p_infected_low'], # type: ignore
+    ons_eng['p_infected_high'], # type: ignore
+    alpha=0.5,
+    label='England (error)'
+  )
   plt.plot(
     ons_nir['days'],
     ons_nir['p_infected'],
     label='Northern Ireland'
+  )
+  plt.fill_between(
+    ons_nir['days'],
+    ons_nir['p_infected_low'], # type: ignore
+    ons_nir['p_infected_high'], # type: ignore
+    alpha=0.5,
+    label='Northern Ireland (error)'
   )
   plt.plot(
     ons_sct['days'],
     ons_sct['p_infected'],
     label='Scotland'
   )
+  plt.fill_between(
+    ons_sct['days'],
+    ons_sct['p_infected_low'], # type: ignore
+    ons_sct['p_infected_high'], # type: ignore
+    alpha=0.5,
+    label='Scotland (error)'
+  )
   plt.plot(
     ons_wls['days'],
     ons_wls['p_infected'],
     label='Wales'
+  )
+  plt.fill_between(
+    ons_wls['days'],
+    ons_wls['p_infected_low'], # type: ignore
+    ons_wls['p_infected_high'], # type: ignore
+    alpha=0.5,
+    label='Wales (error)'
   )
   plt.title('ONS')
   plt.xlabel('Days since 2020/01/06')
@@ -89,10 +145,24 @@ def eng():
     coronasurveys_eng['p_cases'],
     label='Coronasurveys'
   )
+  plt.fill_between(
+    coronasurveys_eng['days'],
+    coronasurveys_eng['p_cases_low'], # type: ignore
+    coronasurveys_eng['p_cases_high'], # type: ignore
+    alpha=0.5,
+    label='Coronasurveys (error)'
+  )
   plt.plot(
     ons_eng['days'],
     ons_eng['p_infected'],
     label='ONS'
+  )
+  plt.fill_between(
+    ons_eng['days'],
+    ons_eng['p_infected_low'], # type: ignore
+    ons_eng['p_infected_high'], # type: ignore
+    alpha=0.5,
+    label='ONS (error)'
   )
   plt.title('England')
   plt.xlabel('Days since 2020/01/06')
@@ -109,10 +179,24 @@ def nir():
     coronasurveys_nir['p_cases'],
     label='Coronasurveys'
   )
+  plt.fill_between(
+    coronasurveys_nir['days'],
+    coronasurveys_nir['p_cases_low'], # type: ignore
+    coronasurveys_nir['p_cases_high'], # type: ignore
+    alpha=0.5,
+    label='Coronasurveys (error)'
+  )
   plt.plot(
     ons_nir['days'],
     ons_nir['p_infected'],
     label='ONS'
+  )
+  plt.fill_between(
+    ons_nir['days'],
+    ons_nir['p_infected_low'], # type: ignore
+    ons_nir['p_infected_high'], # type: ignore
+    alpha=0.5,
+    label='ONS (error)'
   )
   plt.title('Northern Ireland')
   plt.xlabel('Days since 2020/01/06')
@@ -129,10 +213,24 @@ def sct():
     coronasurveys_sct['p_cases'],
     label='Coronasurveys'
   )
+  plt.fill_between(
+    coronasurveys_sct['days'],
+    coronasurveys_sct['p_cases_low'], # type: ignore
+    coronasurveys_sct['p_cases_high'], # type: ignore
+    alpha=0.5,
+    label='Coronasurveys (error)'
+  )
   plt.plot(
     ons_sct['days'],
     ons_sct['p_infected'],
     label='ONS'
+  )
+  plt.fill_between(
+    ons_sct['days'],
+    ons_sct['p_infected_low'], # type: ignore
+    ons_sct['p_infected_high'], # type: ignore
+    alpha=0.5,
+    label='ONS (error)'
   )
   plt.title('Scotland')
   plt.xlabel('Days since 2020/01/06')
@@ -149,10 +247,24 @@ def wls():
     coronasurveys_wls['p_cases'],
     label='Coronasurveys'
   )
+  plt.fill_between(
+    coronasurveys_wls['days'],
+    coronasurveys_wls['p_cases_low'], # type: ignore
+    coronasurveys_wls['p_cases_high'], # type: ignore
+    alpha=0.5,
+    label='Coronasurveys (error)'
+  )
   plt.plot(
     ons_wls['days'],
     ons_wls['p_infected'],
     label='ONS'
+  )
+  plt.fill_between(
+    ons_wls['days'],
+    ons_wls['p_infected_low'], # type: ignore
+    ons_wls['p_infected_high'], # type: ignore
+    alpha=0.5,
+    label='ONS (error)'
   )
   plt.title('Wales')
   plt.xlabel('Days since 2020/01/06')
