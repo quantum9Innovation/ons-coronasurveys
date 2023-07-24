@@ -35,7 +35,7 @@ def coronasurveys():
     coronasurveys_eng['days'],
     coronasurveys_eng['p_cases_low'], # type: ignore
     coronasurveys_eng['p_cases_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='England (error)'
   )
   plt.plot(
@@ -47,7 +47,7 @@ def coronasurveys():
     coronasurveys_nir['days'],
     coronasurveys_nir['p_cases_low'], # type: ignore
     coronasurveys_nir['p_cases_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='Northern Ireland (error)'
   )
   plt.plot(
@@ -59,7 +59,7 @@ def coronasurveys():
     coronasurveys_sct['days'],
     coronasurveys_sct['p_cases_low'], # type: ignore
     coronasurveys_sct['p_cases_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='Scotland (error)'
   )
   plt.plot(
@@ -71,7 +71,7 @@ def coronasurveys():
     coronasurveys_wls['days'],
     coronasurveys_wls['p_cases_low'], # type: ignore
     coronasurveys_wls['p_cases_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='Wales (error)'
   )
   plt.plot(
@@ -83,7 +83,7 @@ def coronasurveys():
     coronasurveys_gb['days'],
     coronasurveys_gb['p_active_low'], # type: ignore
     coronasurveys_gb['p_active_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='UK, active (error)'
   )
   plt.title('Coronasurveys')
@@ -105,7 +105,7 @@ def ons():
     ons_eng['days'],
     ons_eng['p_infected_low'], # type: ignore
     ons_eng['p_infected_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='England (error)'
   )
   plt.plot(
@@ -117,7 +117,7 @@ def ons():
     ons_nir['days'],
     ons_nir['p_infected_low'], # type: ignore
     ons_nir['p_infected_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='Northern Ireland (error)'
   )
   plt.plot(
@@ -129,7 +129,7 @@ def ons():
     ons_sct['days'],
     ons_sct['p_infected_low'], # type: ignore
     ons_sct['p_infected_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='Scotland (error)'
   )
   plt.plot(
@@ -141,7 +141,7 @@ def ons():
     ons_wls['days'],
     ons_wls['p_infected_low'], # type: ignore
     ons_wls['p_infected_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='Wales (error)'
   )
   plt.plot(
@@ -153,7 +153,7 @@ def ons():
     ons_gb['days'],
     ons_gb['p_infected_low'], # type: ignore
     ons_gb['p_infected_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='UK (error)'
   )
   plt.title('ONS')
@@ -175,7 +175,7 @@ def eng():
     coronasurveys_eng['days'],
     coronasurveys_eng['p_cases_low'], # type: ignore
     coronasurveys_eng['p_cases_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='Coronasurveys (error)'
   )
   plt.plot(
@@ -187,7 +187,7 @@ def eng():
     ons_eng['days'],
     ons_eng['p_infected_low'], # type: ignore
     ons_eng['p_infected_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='ONS (error)'
   )
   plt.title('England')
@@ -209,7 +209,7 @@ def nir():
     coronasurveys_nir['days'],
     coronasurveys_nir['p_cases_low'], # type: ignore
     coronasurveys_nir['p_cases_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='Coronasurveys (error)'
   )
   plt.plot(
@@ -221,7 +221,7 @@ def nir():
     ons_nir['days'],
     ons_nir['p_infected_low'], # type: ignore
     ons_nir['p_infected_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='ONS (error)'
   )
   plt.title('Northern Ireland')
@@ -243,7 +243,7 @@ def sct():
     coronasurveys_sct['days'],
     coronasurveys_sct['p_cases_low'], # type: ignore
     coronasurveys_sct['p_cases_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='Coronasurveys (error)'
   )
   plt.plot(
@@ -255,7 +255,7 @@ def sct():
     ons_sct['days'],
     ons_sct['p_infected_low'], # type: ignore
     ons_sct['p_infected_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='ONS (error)'
   )
   plt.title('Scotland')
@@ -277,7 +277,7 @@ def wls():
     coronasurveys_wls['days'],
     coronasurveys_wls['p_cases_low'], # type: ignore
     coronasurveys_wls['p_cases_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='Coronasurveys (error)'
   )
   plt.plot(
@@ -289,7 +289,7 @@ def wls():
     ons_wls['days'],
     ons_wls['p_infected_low'], # type: ignore
     ons_wls['p_infected_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='ONS (error)'
   )
   plt.title('Wales')
@@ -311,7 +311,7 @@ def gb():
     coronasurveys_gb['days'],
     coronasurveys_gb['p_active_low'], # type: ignore
     coronasurveys_gb['p_active_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='Coronasurveys (error)'
   )
   plt.plot(
@@ -323,7 +323,7 @@ def gb():
     ons_gb['days'],
     ons_gb['p_infected_low'], # type: ignore
     ons_gb['p_infected_high'], # type: ignore
-    alpha=0.5,
+    alpha=0.25,
     label='ONS (error)'
   )
   plt.title('UK Active Cases')
